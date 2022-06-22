@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid box</title>
+    <link rel="stylesheet" href="my grid box style.css" />
+
+    <style>
+      .main1 {
+        align-self: center;
+        display: grid;
+        grid-template-areas:
+          "a a a b"
+          "c c d d"
+          "c c e e";
+
+        row-gap: 10px;
+        column-gap: 10px;
+        text-align: center;
+      }
+
+      .main1 > div {
+        padding: 40px 0;
+      }
+
+      .item-a {
+        background-color: orangered;
+        grid-area: a;
+        color: orangered;
+      }
+
+      .item-b {
+        background-color: orange;
+        grid-area: b;
+        color: orange;
+      }
+
+      .item-c {
+        background-color: green;
+        grid-area: c;
+        color: green;
+      }
+
+      .item-d {
+        background-color: rgb(78, 78, 231);
+        grid-area: d;
+        color: rgb(78, 78, 231) ;
+      }
+
+      .item-e {
+        background-color: rgb(78, 78, 231);
+        grid-area: e;
+        color: rgb(78, 78, 231);
+      }
+    </style>
+  </head>
+  <body align="center">
+    <main class="main1" align="center">
+      <div class="item-a">A`</div>
+      <div class="item-b">B</div>
+      <div class="item-c">C</div>
+      <div class="item-d">D</div>
+      <div class="item-e">E</div>
+    </main>
+  </body>
+</html>
