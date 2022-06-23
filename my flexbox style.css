@@ -41,7 +41,7 @@ main{ }
   font-family: "Lexend Deca", sans-serif;
   border: solid hsl(184, 100%, 22%); 
   left: 7cm;
-  top: 1cm;
+  top: 0.5cm;
   border-radius: 2cm;
 }
 
